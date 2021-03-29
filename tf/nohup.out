@@ -2423,3 +2423,38 @@ coreClock: 1.695GHz coreCount: 16 deviceMemorySize: 7.90GiB deviceMemoryBandwidt
 [I 08:36:16.196 NotebookApp] Saving actor_critic-Copy2.ipynb
 [W 08:36:16.196 NotebookApp] Notebook workspace/tf/actor_critic-Copy2.ipynb is not trusted
 [I 08:36:20.619 NotebookApp] Starting buffering for d079a48d-f244-4fdc-b4b8-e289295d2a32:32c5a2c775584883bc888616ada46280
+[I 05:13:01.902 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 05:13:01.968 NotebookApp] [Jupytext Server Extension] Deriving a JupytextContentsManager from LargeFileManager
+[I 05:13:01.970 NotebookApp] Serving notebooks from local directory: /jwkim
+[I 05:13:01.970 NotebookApp] Jupyter Notebook 6.2.0 is running at:
+[I 05:13:01.970 NotebookApp] http://b94d15949023:8888/
+[I 05:13:01.970 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 05:13:15.614 NotebookApp] 302 GET / (172.17.0.1) 0.790000ms
+[W 05:13:28.157 NotebookApp] Config option `template_path` not recognized by `ExporterCollapsibleHeadings`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.168 NotebookApp] Config option `template_path` not recognized by `ExporterCollapsibleHeadings`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.197 NotebookApp] Config option `template_path` not recognized by `TocExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.204 NotebookApp] Config option `template_path` not recognized by `TocExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.218 NotebookApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.231 NotebookApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.249 NotebookApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.262 NotebookApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.300 NotebookApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.307 NotebookApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.468 NotebookApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.476 NotebookApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.583 NotebookApp] Config option `template_path` not recognized by `ExporterCollapsibleHeadings`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.593 NotebookApp] Config option `template_path` not recognized by `ExporterCollapsibleHeadings`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.621 NotebookApp] Config option `template_path` not recognized by `TocExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.628 NotebookApp] Config option `template_path` not recognized by `TocExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.641 NotebookApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.654 NotebookApp] Config option `template_path` not recognized by `LenvsHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.671 NotebookApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.685 NotebookApp] Config option `template_path` not recognized by `LenvsTocHTMLExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.722 NotebookApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.730 NotebookApp] Config option `template_path` not recognized by `LenvsLatexExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.889 NotebookApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:28.899 NotebookApp] Config option `template_path` not recognized by `LenvsSlidesExporter`.  Did you mean one of: `extra_template_paths, template_name, template_paths`?
+[W 05:13:29.306 NotebookApp] Notebook workspace/tf/actor_critic-Copy2.ipynb is not trusted
+[I 05:13:30.014 NotebookApp] Kernel started: 61034465-7883-4428-92c7-020b4fab654b, name: python3
+[I 05:13:30.584 NotebookApp] Adapting from protocol version 5.1 (kernel 61034465-7883-4428-92c7-020b4fab654b) to 5.3 (client).
+[I 05:13:35.930 NotebookApp] Starting buffering for 61034465-7883-4428-92c7-020b4fab654b:ccb9596c9b424c469b2eeef092cb9219
