@@ -1,12 +1,14 @@
 # no files
 *.ipynb
 *.pyc
-events.out.*
+*.v2
 nohup.out
+
+# directory
 /tf/tutorials/dqn/breakout-saves/*
 /tf/agents
-
+/tf/tutorials/*
 
 # except
-# !/tf/tutorials/dqn
+!/tf/tutorials/dqn
 
