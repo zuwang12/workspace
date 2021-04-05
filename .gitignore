@@ -5,5 +5,5 @@ nohup.out
 /tf/agents
 
 # except
-# !/tf/tutorials/dqn/*
+!/tf/tutorials/dqn
 
