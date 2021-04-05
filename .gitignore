@@ -1,6 +1,6 @@
 # no files
 *.ipynb
-# events.out.*
+events.out*
 nohup.out
 /tf/tutorials/dqn/breakout-saves/*
 /tf/agents
