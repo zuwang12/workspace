@@ -1,9 +1,10 @@
 # no files
 *.ipynb
+# events.out.*
 nohup.out
 /tf/tutorials/dqn/breakout-saves/*
 /tf/agents
-# *.v2
+
 
 # except
 # !/tf/tutorials/dqn
