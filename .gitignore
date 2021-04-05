@@ -1,5 +1,6 @@
 # no files
 *.ipynb
+*.pyc
 events.out.*
 nohup.out
 /tf/tutorials/dqn/breakout-saves/*
