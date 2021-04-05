@@ -1,8 +1,9 @@
 # no files
 *.ipynb
 nohup.out
-/tf/tutorials/*
+/tf/tutorials
+/tf/agents
 
 # except
-!/tf/tutorials/dqn/*
+# !/tf/tutorials/dqn/*
 
