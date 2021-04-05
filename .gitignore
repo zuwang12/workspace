@@ -2,7 +2,7 @@
 *.ipynb
 nohup.out
 /tf/tutorials
-/tf/agents
+# /tf/agents
 
 # except
 # !/tf/tutorials/dqn/*
