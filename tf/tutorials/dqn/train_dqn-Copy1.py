@@ -13,13 +13,14 @@
 #     name: python3
 # ---
 
-from config import (BATCH_SIZE, CLIP_REWARD, DISCOUNT_FACTOR, ENV_NAME,
-                    EVAL_LENGTH, FRAMES_BETWEEN_EVAL, INPUT_SHAPE,
-                    LEARNING_RATE, LOAD_FROM, LOAD_REPLAY_BUFFER,
-                    MAX_EPISODE_LENGTH, MAX_NOOP_STEPS, MEM_SIZE,
-                    MIN_REPLAY_BUFFER_SIZE, PRIORITY_SCALE, SAVE_PATH,
-                    TENSORBOARD_DIR, TOTAL_FRAMES, UPDATE_FREQ, USE_PER,
-                    WRITE_TENSORBOARD)
+# +
+# from config import (BATCH_SIZE, CLIP_REWARD, DISCOUNT_FACTOR, ENV_NAME,
+#                     EVAL_LENGTH, FRAMES_BETWEEN_EVAL, INPUT_SHAPE,
+#                     LEARNING_RATE, LOAD_FROM, LOAD_REPLAY_BUFFER,
+#                     MAX_EPISODE_LENGTH, MAX_NOOP_STEPS, MEM_SIZE,
+#                     MIN_REPLAY_BUFFER_SIZE, PRIORITY_SCALE, SAVE_PATH,
+#                     TENSORBOARD_DIR, TOTAL_FRAMES, UPDATE_FREQ, USE_PER,
+#                     WRITE_TENSORBOARD)
 
 # +
 # Name of the Gym environment for the agent to learn & play
@@ -347,9 +348,10 @@ class ReplayBuffer:
         self.terminal_flags = np.load(folder_name + '/terminal_flags.npy')
 
 
-# + code_folding=[0, 2, 67, 84, 105, 133, 137, 141, 192, 214]
+# + code_folding=[3, 68, 85, 106, 134, 138, 197, 219]
 class Agent(object):
     """Implements a standard DDDQN agent"""
+    
     def __init__(self,
                  dqn,
                  target_dqn,
@@ -490,6 +492,7 @@ class Agent(object):
         self.replay_buffer.add_experience(action, frame, reward, terminal, clip_reward)
 
     def learn(self, batch_size, gamma, frame_number, priority_scale=1.0):
+
         """Sample a batch and use it to improve the DQN
         Arguments:
             batch_size: How many samples to draw for an update
@@ -499,7 +502,6 @@ class Agent(object):
         Returns:
             The loss between the predicted and target Q as a float
         """
-
         if self.use_per:
             (states, actions, rewards, new_states, terminal_flags), importance, indices = self.replay_buffer.get_minibatch(batch_size=self.batch_size, priority_scale=priority_scale)
             importance = importance ** (1-self.calc_epsilon(frame_number))
@@ -512,7 +514,7 @@ class Agent(object):
         # Target DQN estimates q-vals for new states
         future_q_vals = self.target_dqn.predict(new_states)
         double_q = future_q_vals[range(batch_size), arg_q_max]
-
+        
         # Calculate targets (bellman equation)
         target_q = rewards + (gamma*double_q * (1-terminal_flags))
 
@@ -625,16 +627,40 @@ else:
     loss_list = meta['loss_list']
 
 # +
+# test = build_q_network(n_actions=4)
+
+# logdir = 'tensorboard'
+# tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=logdir)
+
+# game_wrapper.reset()
+# test_in = game_wrapper.state.reshape(-1,84,84,4)
+# test_out = game_wrapper.state.reshape(-1,84,84,4)
+
+# test.fit(
+#     test_in,
+#     test_out,
+#     batch_size = 1,
+#     epochs=1,
+#     callbacks = [tensorboard_callback]
+# )
+
+# # %load_ext tensorboard
+# # %tensorboard --logdir tensorboard --bind_all --port 6007
+
+# +
 TOTAL_FRAMES = 10
 FRAMES_BETWEEN_EVAL = 10
 MAX_EPISODE_LENGTH = 5
 EVAL_LENGTH = 5
+UPDATE_FREQ = 1
+MIN_REPLAY_BUFFER_SIZE = 1
+
 
 frame_number = 0
 rewards = []
 loss_list = []
 
-# + code_folding=[25, 31, 36, 40, 47, 62, 93, 98, 101]
+# + code_folding=[13, 47, 62, 93, 98, 101]
 # Main loop
 try:
     with writer.as_default():
@@ -750,9 +776,10 @@ except KeyboardInterrupt:
 #         print('Saving...')
 #         agent.save(f'{SAVE_PATH}/save-{str(frame_number).zfill(8)}', frame_number=frame_number, rewards=rewards, loss_list=loss_list)
 #         print('Saved.')
-# -
+# +
+# %load_ext tensorboard
 
-
+# %tensorboard --logdir tensorboard --bind_all --port 6007
 
 # + code_folding=[7, 59, 95]
 # Main loop
