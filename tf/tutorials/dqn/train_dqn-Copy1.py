@@ -660,7 +660,7 @@ frame_number = 0
 rewards = []
 loss_list = []
 
-# + code_folding=[13, 47, 62, 93, 98, 101]
+# + code_folding=[13, 47, 93, 98, 101]
 # Main loop
 try:
     with writer.as_default():

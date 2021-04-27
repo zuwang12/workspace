@@ -3,11 +3,13 @@
 *.pyc
 *.v2
 nohup.out
+events.out.*
 
 # directory
 /tf/tutorials/dqn/breakout-saves/*
 /tf/agents
 /tf/tutorials/*
+/project
 
 # except
 !/tf/tutorials/dqn
