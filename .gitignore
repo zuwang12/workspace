@@ -9,6 +9,7 @@ events.out.*
 /tf/tutorials/dqn/breakout-saves/*
 /tf/agents
 /tf/tutorials/*
+/torch/uvadlc_notebooks/*
 /project
 
 # except
