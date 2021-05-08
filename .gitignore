@@ -4,6 +4,7 @@
 *.v2
 nohup.out
 events.out.*
+kakao*
 
 # directory
 /tf/tutorials/dqn/breakout-saves/*
@@ -11,6 +12,7 @@ events.out.*
 /tf/tutorials/*
 /torch/uvadlc_notebooks/*
 /project
+/kaggle/*
 
 # except
 !/tf/tutorials/dqn
